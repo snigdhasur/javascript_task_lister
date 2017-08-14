@@ -2,8 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Task Lister</title>
     <script src="./app.js" charset="utf-8"></script>
+    <script src="./list.js" charset="utf-8"></script>
+    <script src="./task.js" charset="utf-8"></script>
+    <script src="./taskForm.js" charset="utf-8"></script>
+
+<!--     <link rel='stylesheet' href='http://d33wubrfki0l68.cloudfront.net/bundles/1f7e1f910b9305111743be37727209b35a226351.css'/>
+ -->
+
 
 </head>
 <body>
@@ -14,8 +23,8 @@
 		<input type="submit" value="add (+)">
 	</form>
 	<br>
-	<form id="add-task-form">
-		<label for="add-task">add a task</label><br>
+	<div id="add-task-form">
+		<!-- <label for="add-task">add a task</label><br>
 		<label for="add-task">priority</label>
 		<select name="" id="add-task-priority">
 			<option value="high">High</option>
@@ -27,9 +36,9 @@
 		<label for="add-task-list">list</label>
 		<select id="all-task-list-options">
 			<!-- My rendered lists will go here -->
-		</select>
-		<input type="submit" value="add (+)">
-	</form>
+	<!-- 	</select>
+		<input type="submit" value="add (+)"> --> 
+	</div>
 	<div id="all-lists">
 		<!-- My rendered lists will go here -->
 	</div>
