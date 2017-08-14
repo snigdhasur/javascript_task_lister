@@ -16,7 +16,7 @@ const List = (function createList() {
     	return `
     		<div id=main_list_${this.id}>
     			<h4>${this.name} 
-            <button class=deleteButton id=delete_list_${this.id} type=button value=list_${this.id}> [X] </button>
+            <button class=listDeleteButton id=delete_list_${this.id} type=button value=list_${this.id}> [X] </button>
           </h4>
           <ul id=list_${this.id}>
           </ul>

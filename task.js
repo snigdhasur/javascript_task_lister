@@ -17,7 +17,7 @@ const Task = (function createTask() {
       return `
         <li id=task_${this.id}>
           ${this.name} | priority: ${this.priority}
-          <button class=deleteButton id=delete_task_${this.id} type=button value=task_${this.id}> [X] </button>
+          <button class=taskDeleteButton id=delete_task_${this.id} type=button value=task_${this.id}> [X] </button>
         </li>
       `
     }

@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     )
 
-    let listButtons = document.querySelectorAll('.deleteButton')
+    let listButtons = document.querySelectorAll('.listDeleteButton')
     listButtons.forEach(button => button.addEventListener('click', function(){
       let deleteList = document.getElementById(`main_${this.value}`) 
       let foundList = List.all()[parseInt(this.value.slice(5, this.value.length))-1]
@@ -88,11 +88,11 @@ document.addEventListener('DOMContentLoaded', function(){
     //   correctList.innerHTML = allTasks
     // }
 
-    let allButtons = document.querySelectorAll('.deleteButton')
+    let allButtons = document.querySelectorAll('.taskDeleteButton')
     allButtons.forEach(button => button.addEventListener('click', function(){
       let deleteTask = document.getElementById(`${this.value}`) 
+      debugger;
       let foundTask = Task.all()[parseInt(this.value.slice(5, this.value.length))-1]
-      foundTask.listId = 0
       deleteTask.remove()
     }))
 
