@@ -49,9 +49,9 @@ const List = (function createList() {
     	const allListsHTML = this.all().filter(list => list.appear === true).map(list => list.render()).join("")
     	// returning a group of divs with list names in them 
     	return `
-    		<div>
+    		<ul id="lists">
     			${allListsHTML}
-    		</div>
+    		</ul>
     	`
     }
 

@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-
 // FORMER CODE
 		// const allListOptions = List.renderAllOptions()
 		// const taskForm = document.getElementById('all-task-list-options')
@@ -45,7 +44,27 @@ document.addEventListener('DOMContentLoaded', function(){
       }
     )
 
+// do it with ad event list 
+    
+    // document.getElementById("lists").addEventListener("click", function(e) {
+    //   if(e.target && e.target.matches("button.listDeleteButton")) {
+    //       let deleteList = document.getElementById(`main_${e.target.value}`) 
+    //       let foundList = List.all()[parseInt(e.target.value.slice(5, e.target.value.length))-1]
+    //       foundList.appear = false 
+    //       deleteList.remove()
+    //       const allListOptions = List.renderAllOptions()
+    //       const taskForm = document.getElementById('all-task-list-options')
+    //       taskForm.innerHTML = allListOptions
+    //      }
+    //   });
+
+
+
+
+// FORMER WAY TO DO IT WITH FOR EACH
+
     let listButtons = document.querySelectorAll('.listDeleteButton')
+
     listButtons.forEach(button => button.addEventListener('click', function(){
       let deleteList = document.getElementById(`main_${this.value}`) 
       let foundList = List.all()[parseInt(this.value.slice(5, this.value.length))-1]
@@ -91,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function(){
     let allButtons = document.querySelectorAll('.taskDeleteButton')
     allButtons.forEach(button => button.addEventListener('click', function(){
       let deleteTask = document.getElementById(`${this.value}`) 
-      debugger;
       let foundTask = Task.all()[parseInt(this.value.slice(5, this.value.length))-1]
       deleteTask.remove()
     }))

@@ -12,7 +12,6 @@ const Task = (function createTask() {
       all.push(this)
     }
    
-
     render(){
       return `
         <li id=task_${this.id}>
@@ -22,11 +21,9 @@ const Task = (function createTask() {
       `
     }
 
-
     static all() {
       return all
     }
-
 
     static renderListTasks(listId) {
       const tasksHTML = this.all().filter(task => task.listId === listId).map(task => task.render()).join("")
@@ -37,7 +34,6 @@ const Task = (function createTask() {
         </div>
       `
     }
-
 
   }
 })()
